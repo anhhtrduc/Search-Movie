@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        />
+        <title>Avengers</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline" id="movieForm">
+                <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    id="movie"
+                />
+                <button
+                    class="btn btn-outline-success my-2 my-sm-0"
+                    type="submit"
+                >
+                    Search
+                </button>
+            </form>
+        </nav>
+        <div class="row row-cols-1 row-cols-md-3" id="result">
+            <div class="col mb-4">
+                <div class="card h-100" type="button">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example" id="pagination">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" id="p1" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" id="p2" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" id="p3" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
